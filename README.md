@@ -5,9 +5,12 @@ This Mastodon bot monitors posts on our server. It identifies non-English posts 
 ## Features
 
 - Connects to the Mastodon API using a specified token.
-- Fetches posts from the specified server.
-- Detects the language of each post.
-- Sends direct messages to users with non-English posts.
+- Fetches posts from the home timeline -- so the bot has to be following a user for them to be eligible for a ping
+- Detects the language of each post (uses the [franc](https://github.com/wooorm/franc) library with a threshold of the top 20* most spoken languages globally)
+- Checks whether we have already messaged the user about this specific post
+- Sends a direct message to the user about their non-English post
+
+\* _franc supports many more languages but my shitposts kept getting classified as Scots so..._
 
 ## Project Structure
 
@@ -31,7 +34,7 @@ lingua-ping
 
 1. **Clone the repository:**
    ```
-   git clone <repository-url>
+   git clone https://github.com/janeadams/lingua-ping
    cd lingua-ping
    ```
 
