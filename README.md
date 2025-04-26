@@ -60,6 +60,8 @@ lingua-ping
 
 - Ensure that you have the necessary permissions from the server owner to run this bot.
 
+- If installing on your own server, start by only following admins and run some tests before following everyone on your instance.
+
 ## Contributing
 
 Contributions are welcome! Please open an issue or submit a pull request for any improvements or bug fixes.
