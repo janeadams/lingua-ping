@@ -5,7 +5,7 @@ This Mastodon bot monitors posts on our server. It identifies non-English posts 
 ## Features
 
 - Connects to the Mastodon API using a specified token.
-- Fetches posts from the home timeline -- so the bot has to be following a user for them to be eligible for a ping
+- Fetches posts from the home timeline -- so the bot has to be following a user for them to be eligible for a ping *and* the user has to be on the same instance as the bot (since this is only to support an agreed-upon server rule, **not** proscribing behavior across the fediverse)
 - Detects the language of each post (uses the [franc](https://github.com/wooorm/franc) library with a threshold of the top 20* most spoken languages globally)
 - Checks whether we have already messaged the user about this specific post
 - Sends a direct message to the user about their non-English post
