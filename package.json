@@ -1,0 +1,19 @@
+{
+  "name": "mastodon-bot",
+  "version": "1.0.0",
+  "description": "A bot for Mastodon that reminds users to provide translations for non-English posts.",
+  "main": "src/bot.js",
+  "scripts": {
+    "start": "node src/bot.js",
+    "test": "echo \"No tests specified\" && exit 0"
+  },
+  "dependencies": {
+    "mastodon-api": "^1.0.0",
+    "franc-min": "^6.0.0"
+  },
+  "devDependencies": {
+    "dotenv": "^10.0.0"
+  },
+  "author": "Your Name",
+  "license": "MIT"
+}
